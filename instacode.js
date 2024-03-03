@@ -292,11 +292,3 @@ t.to(".landing_page",{
 })
 }
 landing();
-
-
-
-
-
-
-
-

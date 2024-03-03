@@ -1,52 +1,406 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
+    background-color: #1B2845;
+    
+
+
 }
-#main{
+.landing_page{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /* opacity: 0.10; */
+    background-color:#FAFAFA;
+    position: absolute;
+    z-index: 999999;
+    
 }
-.box{
-    width: 300px;
-    height: 400px;
-    border: 3px solid black;
-    background-color: #dbe8e8;
-    border-radius: 10px;
-    text-align: center;
+.landing_page h1{
+   
+   font-size: 3vw;
+   font-weight: 700;
+
+   
+    
 }
 
-.pic img{
-    width: 120px;
-    height: 120px;
+#cursor1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
     border-radius: 50%;
+    background: rgba(255, 255, 0, 0.833);
+    z-index: 9999;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cursor1 h1 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.decolines {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+#heading {
+    /* width: fit-content; */
+    object-fit: contain;
+}
+
+#Tailored_digital {
+    width: fit-content;
+    overflow: hidden;
+}
+
+#Tailored_digital h1 {
+    transform: translateY(100%);
+
+}
+
+#your_business {
+    width: fit-content;
+    overflow: hidden;
+}
+
+#your_business h1 {
+    transform: translateY(110%);
+}
+
+#solutions {
+    width: fit-content;
+    overflow: hidden;
+}
+
+#solutions h1 {
+
+    transform: translateY(100%);
+}
+
+.home_footer {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.home_footer img {
+
+    transform: translateY(100%);
+}
+
+#second_part {
+    width: 100%;
+    height: auto;
+
+    padding: 4vw;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.row:nth-child(2n) {
+    margin-top: 2vw;
+}
+
+.parent_image {
+    width: 100%;
+    padding: 2vw;
+
+}
+
+.image_row img {
+    width: 45vw;
+    height: 65vh;
     object-fit: cover;
-    margin-top:10px ;
-    border: 3px solid black;
+    cursor: none;
+
 }
- h1{
-    padding: 10px 16px;
+
+.text {
+    width: fit-content;
+    padding-left: 2vw;
+    padding-bottom: -1vw;
 }
-p{
-    padding: 0px 5px;
-}
-h2{
-    margin-top: 12px;
-    font-size: 2.6vw;
-    color: red;
-}
-button{
-    padding: 10px 35px;
-    margin-top:15px;
-    font-size: 1.4vw;
+
+.text a h1 {
+    color: white;
+    font-size: 4vw;
     font-weight: 700;
-    background-color: rgb(108, 108, 214);
-    border-radius: 10px;
+    letter-spacing: -0.2vw;
+
+}
+
+.text a h1 {
+
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.text a h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0.8vw;
+    left: 0;
+    background-color: rgb(234, 234, 43);
+    opacity: .9;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.text a h1:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#footer_text {
+    font-size: 1.3vw;
+    margin-left: 2vw;
+    padding-top: -2vw;
+    opacity: 0.6;
+    color: white;
+
+}
+
+#what_we_do_row {
+    width: 100%;
+    height: 440vh;
+    padding-top: 10vw;
+    /* z-index: -1; */
+    opacity: 0;
+}
+
+#brand {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -4vw;
+    color: #1B2845;
+}
+
+.brand_identitfy h1 {
+    margin-bottom: 1vw;
+    color: #b0b5bf;
+}
+
+.brand_identitfy h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 2.2vw
+}
+
+.web h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 2.2vw
+}
+
+.web h1 {
+    line-height: 4vw;
+}
+
+#About_us {
+    width: 100%;
+    height: 100vh;
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+}
+
+.about {
+    width: 30%;
+}
+
+.product_image1 img {
+    width: 8vw;
+    height: 10vh;
+}
+
+.product_image2 img {
+    width: 8vw;
+    height: 10vh;
+}
+
+.product_image3 img {
+    width: 8vw;
+    height: 8vh;
+}
+
+.Co_founder {
+    width: 100%;
+    gap: 8vw;
+    padding-left: 7vw;
+
+}
+
+.Co_founder h1 {
+
+
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -.1vw;
+}
+
+.Co_founder h2 {
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 300;
+    margin-left: 0.5vw;
+}
+
+.Co_founder h1 span {
+    color: #FFD23F;
+    font-size: 0.8vw;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 40vw;
+    gap: 5vw;
+    margin-left: 7vw;
+}
+
+.footer h1 {
+    width: fit-content;
+    font-size: 4vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    /* letter-spacing: -.1vw; */
+    line-height: 5vw;
+}
+
+.footer h2 {
+    width: fit-content;
+    margin-right: 25vw;
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-left: 0.5vw;
+    margin-bottom: 3vw;
+}
+
+
+.footer {
+    width: fit-content;
+    padding-left: 2vw;
+    padding-bottom: -1vw;
+}
+
+.footer h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 700;
+    letter-spacing: -0.2vw;
+
+}
+
+.footer h1 {
+
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0.3vw;
+    left: 0;
+    background-color: rgb(234, 234, 43);
+    opacity: .9;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.footer h1:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+.cinatiner{
+    display: flex;
+    flex-direction: row;
+}
+
+.innerDiv{
+    border: 2px solid red; height:20rem; width: 50%;
+}
+
+@media (max-width: 600px){
+    .cinatiner{
+        display: flex;
+        flex-direction: column;     
+    }
+    .innerDiv{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #main-navbar{
+        width: 100%;
+        height: 6vh;
+    
+        
+        
+    }
+   #herbertus {
+    font-size: 5vw;
+   }
+   .Herbertus_logoz{
+    font-size: 5vw;
+   }
+   .Herbertus_logo {
+ margin-left: 6vw;
+                 font-size: 112vw; 
+                 position: absolute;
+                 margin-top: -3vw;
+                 font-weight:600 ;
+                 opacity: 0;
+   }
+
+   #heading{
+    font-size: 10vw;
+   }
+
+   .Home{
+    width: 100%;
+    height: 20vh;
+   }
+
+
+               
+   
 }

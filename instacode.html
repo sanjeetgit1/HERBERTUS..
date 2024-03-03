@@ -1,17 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="instacade.css">
+    <title> HERBERTUS.CO</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
 </head>
+
 <body>
+    <div id="cursor1">
+        <h1>view</h1>
+    </div>
+
+    <div class="landing_page">
+        <h1> HERBERTUS</h1>
+    </div>
+
+    <div class="decolines" style="display: flex; justify-content: space-evenly; opacity: 0.5;">
+        <div class="decoline"
+            style="width: 1px; height: 100vh; left: 10%; top: 0; background-color: rgb(87, 87, 87); transform-origin: 50% 0%; transform: scaleY(1);">
+        </div>
+        <div class="decoline"
+            style="width: 1px; height: 100vh; left: 30%; top: 0; background-color: rgb(87, 87, 87); transform-origin: 50% 0%; transform: scaleY(1);">
+        </div>
+        <div class="decoline"
+            style="width: 1px; height: 100vh; left: 50%; top: 0; background-color: rgb(87, 87, 87); transform-origin: 50% 0%; transform: scaleY(1);">
+        </div>
+        <div class="decoline"
+            style="width: 1px; height: 100vh; left: 70%; top: 0; background-color: rgb(87, 87, 87); transform-origin: 50% 0%; transform: scaleY(1);">
+        </div>
+        <div class="decoline"
+            style="width: 1px; height: 100vh; left: 90%; top: 0; background-color: rgb(87, 87, 87); transform-origin: 50% 0%; transform: scaleY(1);">
+        </div>
+    </div>
+
+    <div id="main-navbar" style="width: 100%; height: 6vw; display: flex;
+    align-items: center; justify-content: space-between;color:#FAFAFA;position: absolute; z-index: 99999; ">
+        <a href="#">
+            <h1 id="herbertus" style="margin-left: 5vw; font-size:2vw; font-weight: 700;  ">HERBERTUS<span
+                    style="color: yellow; font-size: 0.7vw;">.</span></h1>
+            <h2 class="Herbertus_logo "
+                style="margin-left: 6vw; font-size: 2vw; position: absolute;margin-top: -3vw; font-weight:600 ;opacity: 0;">
+                H<span style="color: yellow; font-size: 0.6vw;"><i class="ri-square-fill"></i></span> </h2>
+        </a>
+        <div class="right" style="display: flex; gap: 2vw; margin-right: 8vw;font-size: 1.2vw; align-items: center; ">
+            <a href="#">
+                <p>hello@herbertus.co</p>
+            </a>
+            <div class="menu" style="font-size: 2.2vw; font-weight: 100; ">
+
+                <button id="btn_menu">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="hello" style="width: 40vw; height: 30vh; background-color: red; opacity: 0; position: absolute;">
+        <h1>hello</h1>
+    </div>
+
+
     <div id="main">
-        
-       </div>
+      
+
+        <div id="heading" style="margin-top: 6vw; margin-left: 5vw; font-size: 2.1vw; color: #FAFAFA;"></div>
+        <div class="Home" style="width: 100%; height: 85vh; margin-top: 2vw; color: #FAFAFA; font-family:MonumentExtendedUltrabold (otf)
+        sans-serif; line-height:8vw;">
+            <div id="Tailored_digital" style="padding: 1.2vw; background: none;">
+                <h1 class="Tailored_digital"
+                    style=" text-decoration: none solid rgb(87, 87, 87); font-size: 10vw; font-weight:900; margin-left: 5vw; letter-spacing: -0.4vw;">
+                    Tailored digital</h1>
+            </div>
+            <div id="solutions" style="backface-visibility: none;">
+                <h1 class="solutions"
+                    style="  font-size: 10vw; font-weight:900; margin-left: 5vw; letter-spacing: -0.4vw;">solutions for
+                </h1>
+            </div>
+            <div id="your_business" style="padding: 1vw;">
+                <h1 class="your_business"
+                    style=" font-size: 10vw; font-weight:900; margin-left: 5vw; letter-spacing: -0.4vw;">your business
+                </h1>
+            </div>
+            <div class="home_footer"
+                style="display: flex; align-items: center;justify-content: start; margin-left: 5vw;">
+                <img src="https://herbertus.co/wp-content/themes/herbertus/static/scroll.svg" class="scroll wow"
+                    width="170" height="47" data-wow-delay="2s" alt="scroll"
+                    style="visibility: visible; animation-delay: 2s; margin-top: 2vw;">
+            </div>
+        </div>
+
+        <div class="our_works"
+            style="color: white; margin-left: 6vw;font-weight: 600;position: absolute; font-size: 3vw;">
+            <h1>Our works</h1>
+        </div>
+
+        <div id="second_part">
 
 
-    <script src="instacade.js"></script>
+        </div>
+        <div id="what_we_do_row">
+
+            <div id="heading2" style="width: 100%; height: 10vh;margin-top: 30vw;  color:#FFD23F; font-family:MonumentExtendedUltrabold (otf)
+        ; font-size: 8vw; font-weight: 650;letter-spacing:.5vw; margin-left: 7vw; "> </div>
+            <div class="paragraph"
+                style="width: 60%; height: 30vh; margin-top: 10vw; font-size: 1.6vw; margin-left: 8vw;">
+                <p>Whether you are looking to create a version of an existing product or launch a new one - we are here
+                    to help you. Branding, website, marketing, packaging, product photography - we cover it all.</p>
+            </div>
+
+            <div id="brand">
+                <div class="brand_identitfy">
+                    <h1 style="font-size: 4vw; font-weight: 700;color:#1B2845;">Brand Identitfy<span
+                            style="color: yellow; font-size: 0.8vw;"><i class="ri-square-fill"></i></span></h1>
+                    <h2>Market Research </h2>
+                    <h2> Branding Strategy</h2>
+                    <h2>Brand Guidelines</h2>
+                    <h2>Visual Identity</h2>
+                    <h2>Logo Design</h2>
+                    <h2>Naming and Taglines</h2>
+                    <h2>Social Media Branding</h2>
+                    <h2>Brand Launch Strategies</h2>
+                    <h2>and more</h2>
+                </div>
+                <div class="web">
+                    <h1 style="font-size: 4vw; font-weight: 700;color: #1B2845;">Website</h1>
+                    <h1 style="font-size: 4vw; font-weight: 700;color:#1B2845;">development<span
+                            style="color: yellow; font-size: 0.8vw;"> <i class="ri-square-fill"></i></span></h1>
+                    <h2>UI/UX, Apps, E-commerce design</h2>
+                    <h2> Wireframing</h2>
+                    <h2>Unique web designs</h2>
+                    <h2>Custom animations</h2>
+                    <h2>Website development</h2>
+                    <h2>and more</h2>
+                </div>
+
+            </div>
+
+
+            <div id="About_us">
+                <div class="about" style="width: 42vw; margin-left: 4vw; ">
+                    <h3 style="font-size: 3vw; margin-bottom: 1.5vw; font-weight: 200; margin-top: 4vw;">About us</h3>
+                    <h1
+                        style=" font-size: 4vw; line-height: 4vw;margin-bottom: 3vw; font-family:  MonumentExtendedUltrabold (otf); font-weight: 700;">
+                        From idea to implementation <span style="color: yellow; font-size: .7vw;"><i
+                                class="ri-square-fill"></i></span></h1>
+                    <p style="font-size: 1.5vw;  margin-bottom: 3vw;">Herbertus is a creative studio that offers
+                        insightful and modern solutions for brand development, UI/UX projects and graphic design
+                        projects.
+                        We aim to create experiences that evoke feelings of engagement, relevancy and have a unique
+                        impact.</p>
+                    <p style="font-size: 1.5vw; line-height: 2.4vw; margin-bottom: 3vw;">By keeping our team small we
+                        ensure a high level of care to each and every one of our clients. With years of experience
+                        combined we've learned to approach challenges with a thoughtfully cultivated precision.</p>
+                    <p style="font-size: 1.5vw; line-height: 2.4vw; margin-bottom: 3vw;">We create the essential tools
+                        for your brand’s success. Elegance is our nature. Passion for the craft is in our blood.</p>
+                </div>
+                <div id="image_right" style="width: 40vw; height: 80vh;">
+                    <img src="https://herbertus.co/wp-content/uploads/2021/11/herbertus-office.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="product"
+            style="width: 100%;  height: 40vw; display: flex;align-items: center; justify-content: space-around;">
+            <div class="product_about" style="font-size: 4vw; width: 45%; font-weight: 700; ">
+                <h1 style="margin-left: 5vw;line-height: 4vw ;color: #FAFAFA;">We are proud to contribute
+                    to <span style="color: yellow;">our clients</span> success.</h1>
+            </div>
+            <div class="product_log">
+                <div class="product_image1" style="display: flex; gap: 5vw; padding-bottom: 4vw;">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/10/Acme_logotipas_balta-1.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/10/CityBee_Logotipas-1.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/03/eika-logo-white.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/03/logo-airguru-white-1.png" alt="">
+                </div>
+
+                <div class="product_image2" style="display:flex; gap: 5vw;padding-bottom: 4vw;">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/03/profitus-logo-white.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/10/Layer_1.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2021/09/logo4.svg" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2021/09/logo5.svg" alt="">
+                </div>
+                <div class="product_image3" style="display: flex; gap: 5vw; padding-bottom: 4vw;">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/03/scale3c-768x113.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/10/clinic212-1.png" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2021/09/logo4.svg" alt="">
+                    <img src="https://herbertus.co/wp-content/uploads/2023/10/labbislogo.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="heading3"
+            style="width: 100%; height: 30vh;font-size: 9vw; margin-left: 6vw; font-weight: 700; color:#FFD23F; font-family: 'MonumentExtendedRegular', sans-serif; ">
+        </div>
+        <div id="our_team" style="width: 100%; height: 80vh; ">
+            <div class="Co_founder" style="display: flex;">
+                <div class="name1">
+                    <h1>Modestas<span><i class="ri-square-fill"></i></span></h1>
+                    <h2>Co Founder, Sales</h2>
+                    <div class="name2">
+                        <h1>Gintarė<span><i class="ri-square-fill"></i></span></h1>
+                        <h2>Designer</h2>
+                    </div>
+                </div>
+                <div class="name3">
+                    <h1>Milda<span><i class="ri-square-fill"></i></span></h1>
+                    <h2>Co Founder, Creative director</h2>
+                    <div class="name4">
+                        <h1>Živilė<span><i class="ri-square-fill"></i></span></h1>
+                        <h2>Marketing</h2>
+                    </div>
+                </div>
+                <div class="name5">
+                    <h1>Margarita<span><i class="ri-square-fill"></i></span></h1>
+                    <h2>Senior designer</h2>
+                    <div class="name6">
+                        <h1>Lukas<span><i class="ri-square-fill"></i></span></h1>
+                        <h2>Developer</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="name1">
+                <h2>Let’s talk about your project</h2>
+                <h1>hello@herbertus.co</h1>
+                <h1>+370 637 45161</h1>
+
+
+            </div>
+            <div class="name3">
+                <h2>Follow us</h2>
+                <h1>Dribbble</h1>
+                <h1>Instagram</h1>
+                <h1>Facebook</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const Image_data = [
+
+            {
+                Image: "https://herbertus.co/wp-content/uploads/2022/11/Dalimaro-main-image-herbertus.png",
+                uppertext: "Dalimaro",
+                subtext: "Branding, Development,UI/UX"
+
+            },
+
+            {
+                Image: "	https://herbertus.co/wp-content/uploads/2023/10/Olinea-herbertus-1.png",
+                uppertext: "Olinea",
+                subtext: "Branding, Development,UI/UX"
+
+            },
+
+            {
+                Image: "https://herbertus.co/wp-content/uploads/2021/10/acala-main-image-herbertus.png",
+                uppertext: "Acala Drinks",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+            ,
+            {
+                Image: "https://herbertus.co/wp-content/uploads/2022/03/Proptech-lithuania-herbertus.png",
+                uppertext: "Proptech Lithuania",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+            ,
+            {
+                Image: "	https://herbertus.co/wp-content/uploads/2023/10/Nauji-peizazai-herbertus-1.png",
+                uppertext: "Nauji peizažai",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+            ,
+            {
+                Image: "		https://herbertus.co/wp-content/uploads/2022/11/Studio-Maestrale-herbertus.png",
+                uppertext: "Studio Maestrale",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+            ,
+            {
+                Image: "https://herbertus.co/wp-content/uploads/2021/10/Agent-House-herbertus.png",
+                uppertext: "Agent House",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+            ,
+            {
+                Image: "https://herbertus.co/wp-content/uploads/2022/12/aplus-ventures-herbertus.png",
+                uppertext: "A+ ventures",
+                subtext: "Branding, Development,UI/UX"
+
+            }
+        ];
+
+        const renderedData = Image_data.map(element => `
+        <div class="row">
+                <div class="parent_image">
+                    <div class="image_row">
+                        <a href="#">
+                            <img src="${element.Image}" alt="">
+                        </a>
+                    </div>
+                </div>
+<div class="text">
+                <a href="#">
+                    <h1>${element.uppertext}</h1>
+                </a></div>
+                <h1 id="footer_text">${element.subtext}</h1>
+            </div>
+        `);
+
+        document.getElementById('second_part').innerHTML = renderedData.join('');
+
+        const Heading = {
+            upperHeading: "We are Herbertus and we create",
+            subHeading: "WHAT WE DO?",
+            buttomHeading: "OUR TEAM",
+        }
+        const UpperHeading = Heading.upperHeading
+        const SubHeading = Heading.subHeading
+        const ButtomHeading = Heading.buttomHeading
+        document.querySelector('#heading').innerHTML = UpperHeading
+        document.querySelector("#heading2").innerHTML = SubHeading
+        document.querySelector('#heading3').innerHTML = ButtomHeading
+
+
+        const b = document.querySelector("hello")
+        const a = document.querySelector("#btn_menu ")
+        a.addEventListener("click", function () {
+            a.style.backgroundColor = "yellow"
+        })
+
+    </script>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
